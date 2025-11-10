@@ -1,34 +1,17 @@
 {
-  "name": "infopulse-news-app",
-  "version": "2.0.0",
-  "description": "AI-powered news assistant with timeline and smart search",
-  "keywords": ["news", "react", "ai", "chatbot", "timeline"],
-  "author": "Your Name",
-  "license": "MIT",
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
-  },
+  "name": "infopulse-max-bot",
+  "version": "1.0.0",
+  "type": "module",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "docker:build": "docker build -t infopulse-news-app .",
-    "docker:run": "docker run -p 3000:3000 infopulse-news-app"
+    "dev": "nodemon bot.js",
+    "start": "node bot.js",
+    "debug": "node --inspect bot.js"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "@maxhub/max-bot-api": "latest",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
   }
 }
